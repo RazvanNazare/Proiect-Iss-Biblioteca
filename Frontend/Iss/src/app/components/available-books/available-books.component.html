@@ -1,0 +1,16 @@
+<body>
+    <div class="booksContainer">
+        <div class="bookTab" *ngFor="let book of mockBooks">
+            <div class="bookHeader">
+                <p class="bookTitle">{{book.bookName}}</p>
+            </div>
+            <div class="bookBody">
+                <div class="bookAuthor">
+                    {{book.author}}
+                </div>
+                <div class="bookImage">Image available soon</div>
+                <button class="borrowButton">Borrow</button>
+            </div>
+        </div>
+    </div>
+</body>

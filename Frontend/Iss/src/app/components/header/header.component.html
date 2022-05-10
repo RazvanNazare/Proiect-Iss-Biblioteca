@@ -1,0 +1,149 @@
+<div id="mainContainer">
+    <div class="leftHalf">
+        <a routerLink="/app-home">
+            <div class="logo">📖UniversalLibrary📖</div>
+        </a>
+    </div>
+    <nav>
+        <div class="rightHalf">
+            <button *ngIf="isLoggedIn == false" class="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                (click)="onLogin()">Login
+            </button>
+
+            <button class="button" *ngIf="isLoggedIn == false" data-bs-toggle="modal" data-bs-target="#signInModal"
+                (click)="onSignIn()">
+                SignIn
+            </button>
+
+            <button class="button" *ngIf="isLoggedIn == true">
+                My books
+            </button>
+
+            <button class="button" *ngIf="isLoggedIn == true" (click)="onSignOut()">
+                SignOut
+            </button>
+
+        </div>
+    </nav>
+</div>
+
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login Details</h5>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="text" formControlName="email" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['email'].touched && formGroupControls['email'].errors">
+                            <span *ngIf="formGroupControls['email'].errors['required']">
+                                The email field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" formControlName="password" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['password'].touched && formGroupControls['password'].errors">
+                            <span *ngIf="formGroupControls['password'].errors['required']">
+                                The password field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+                    <button (click)="onLoginVerification()" class="btn btn-primary">Login</button>
+                    <button type="button" id="cancelLogin" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="signInModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sign In Details</h5>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="text" formControlName="email" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['email'].touched && formGroupControls['email'].errors">
+                            <span *ngIf="formGroupControls['email'].errors['required']">
+                                The email field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" formControlName="password" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['password'].touched && formGroupControls['password'].errors">
+                            <span *ngIf="formGroupControls['password'].errors['required']">
+                                The password field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputName1" class="form-label">Name</label>
+                        <input type="text" formControlName="name" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['name'].touched && formGroupControls['name'].errors">
+                            <span *ngIf="formGroupControls['name'].errors['required']">
+                                The Name field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputCnp1" class="form-label">CNP</label>
+                        <input type="text" formControlName="cnp" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['cnp'].touched && formGroupControls['cnp'].errors">
+                            <span *ngIf="formGroupControls['cnp'].errors['required']">
+                                The CNP field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputAdress1" class="form-label">Adress</label>
+                        <input type="text" formControlName="adress" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['adress'].touched && formGroupControls['adress'].errors">
+                            <span *ngIf="formGroupControls['adress'].errors['required']">
+                                The Adress field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputMobile1" class="form-label">Mobile</label>
+                        <input type="text" formControlName="mobile" class="form-control">
+                        <div class="form-error"
+                            *ngIf="formGroupControls['mobile'].touched && formGroupControls['mobile'].errors">
+                            <span *ngIf="formGroupControls['mobile'].errors['required']">
+                                The Mobile field is mandatory.
+                            </span>
+                        </div>
+                    </div>
+
+                    <button (click)="onSignInVerification()" class="btn btn-primary">SignIn</button>
+                    <button type="button" id="cancelSignIn" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
