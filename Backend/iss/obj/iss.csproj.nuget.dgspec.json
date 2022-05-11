@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\iss\\Backend\\iss\\iss.csproj": {}
+    "D:\\iss\\Proiect-Iss-Biblioteca\\Backend\\iss\\iss.csproj": {}
   },
   "projects": {
-    "D:\\iss\\Backend\\iss\\iss.csproj": {
+    "D:\\iss\\Proiect-Iss-Biblioteca\\Backend\\iss\\iss.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\iss\\Backend\\iss\\iss.csproj",
+        "projectUniqueName": "D:\\iss\\Proiect-Iss-Biblioteca\\Backend\\iss\\iss.csproj",
         "projectName": "iss",
-        "projectPath": "D:\\iss\\Backend\\iss\\iss.csproj",
+        "projectPath": "D:\\iss\\Proiect-Iss-Biblioteca\\Backend\\iss\\iss.csproj",
         "packagesPath": "C:\\Users\\Razvan\\.nuget\\packages\\",
-        "outputPath": "D:\\iss\\Backend\\iss\\obj\\",
+        "outputPath": "D:\\iss\\Proiect-Iss-Biblioteca\\Backend\\iss\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Razvan\\AppData\\Roaming\\NuGet\\NuGet.Config",

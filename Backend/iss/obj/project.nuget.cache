@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HK2olbdziIlyXyf68/rxw1yEoF9niKMK2JaS1claS554vLpwoQOAHr6SRhQUDFwznu10gZt2L0aNb0hTu5Pvng==",
+  "dgSpecHash": "n/8q0GcMyIzFNor6bzgcG8jYDR8dXbSfPEuqsB+GYdv8n93QWUSfK1E4vdUaMcZfIDh2H3X//gJu6s4DPLqbcw==",
   "success": true,
-  "projectFilePath": "D:\\iss\\Backend\\iss\\iss.csproj",
+  "projectFilePath": "D:\\iss\\Proiect-Iss-Biblioteca\\Backend\\iss\\iss.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Razvan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Razvan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
